@@ -1,12 +1,27 @@
-# _{Application Name}_
+# Pig Latin Translator
 
 #### _{Brief description of application}, {Date of current version}_
 
-#### By _**{List of contributors}**_
+#### By _**Jeff Dinsmore & Chloe Hellberg**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Describe: `pigLatin()`
+Test: "It will add 'way' to the end of words that begin with a vowel"
+Expect(pigLatin("a")).toEqual("away");
+
+Test: "For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add 'ay'"
+Expect(pigLatin("chosen")).toEqual("osenchay");
+
+Test: "For words beginning with 'y', treat 'y' as a consonant, and add 'ay'"
+Expect(pigLatin("your")).toEqual("ouryay");
+
+Tests: "If the first consonants include 'qu', move the 'u' along with the 'q'. Don't forget about words like 'squeal' where 'qu' doesn't come first"
+Expect(pigLatin("Squeal")).toEqual("ealSqu");
+Expect(pigLatin("question")).toEqual("estionqu");
+
+
+
 
 ## Setup/Installation Requirements
 
